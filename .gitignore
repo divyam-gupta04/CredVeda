@@ -1,14 +1,14 @@
-# Python specific
+
 __pycache__/
 *.pyc
 venv/
-.env # If you use .env for secrets
+.env 
 
-# Database
+
 *.db
 credit_intelligence.db
 
-# ML Model artifacts (outputs of training)
+
 *.joblib
 model_rf.joblib
 model_xgb.joblib
@@ -20,7 +20,7 @@ feature_cols_rf.joblib
 feature_cols_xgb.joblib
 feature_cols.joblib
 
-# Output data
+
 output/
 
 
