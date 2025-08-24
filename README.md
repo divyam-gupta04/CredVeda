@@ -41,17 +41,25 @@ CredVeda leverages a **hybrid data approach**, fusing structured financial data 
 **APIs:** Yahoo Finance, FRED, NewsAPI, API Ninjas  
 
 ---
+
+## Project Structure  
+
+```text
 CredVeda/
-│── config.py # Central config (tickers, features, API keys)
-│── database.py # SQLite DB setup
-│── data_ingestion.py # Ingests US market data
-│── ingest_ns.py # Ingests Indian market data
-│── model_training.py # ML training pipeline
-│── scoring.py # Generates scores + SHAP explanations
-│── dashboard.py # Flask web app
-│── chatbot.py # Chatbot logic
-│── requirements.txt # Dependencies
-│── .env # API keys (not committed)
+│── config.py          # Central config (tickers, features, API keys)
+│── database.py        # SQLite DB setup
+│── data_ingestion.py  # Ingests US market data
+│── ingest_ns.py       # Ingests Indian market data
+│── model_training.py  # ML training pipeline
+│── scoring.py         # Generates scores + SHAP explanations
+│── app.py             # Flask web app
+│── chatbot.py         # Chatbot logic
+│── requirements.txt   # Dependencies
+│── .env               # API keys (not committed)
+```
+
+
+---
 
 ## Setup & Installation  
 
@@ -95,10 +103,8 @@ CredVeda/
    python scoring.py xgb  
 
 5. **Launch Web Application**  
-   python dashboard.py  
+   python app.py  
 
    Then open: http://127.0.0.1:5000
 
-
- 
 
